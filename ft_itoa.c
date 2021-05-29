@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:35:53 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/28 22:14:56 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 00:05:25 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ static char	*ft_strcpy(char *dst, const char *src)
 char	*ft_itoa(int n)
 {
 	char	*str;
+
 	str = (char *)malloc(sizeof(char) * 2);
 	if (str == NULL)
 		return (NULL);

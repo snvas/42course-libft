@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 16:27:23 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/28 22:52:21 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 00:07:08 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 
 	i = 0;
 	if (len == 0)
-		return((char *)s1);
+		return ((char *)s1);
 	if (ft_strlen(s1) < ft_strlen(s2))
 		return (NULL);
 	while (i < len && s1[i] != '\0')
