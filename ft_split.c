@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 23:30:33 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/27 01:47:43 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 01:14:30 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,7 @@ char	**ft_split(char const *s, char c)
 			k++;
 		}
 	}
+	k--;
 	tab[k] = NULL;
 	return (tab);
 }
