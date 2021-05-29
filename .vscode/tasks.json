@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc-9 arquivo de build ativo",
+            "command": "/usr/bin/gcc-9",
+            "args": [
+                "-g -Wextra -Werror -Wall",
+                "${workspaceFolder}/src/libc/${fileBasename}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+				"ft_strim.c",
+				"ft_strchr.c",
+				"ft_strrchr.c",
+				"ft_strlen.c",
+				"ft_substr.c"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarefa gerada pelo Depurador."
+        }
+    ],
+    "version": "2.0.0"
+}
