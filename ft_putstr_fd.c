@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 15:54:22 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/26 23:28:38 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 17:38:12 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (s == NULL)
+		return ;
 	write(fd, s, ft_strlen(s));
 }

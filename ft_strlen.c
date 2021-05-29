@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 17:06:54 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/26 21:36:42 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 17:30:08 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t	len;
+	int	len;
 
 	len = 0;
-	while (str[len])
-	{
+	while (str[len] != '\0')
 		len++;
-	}
 	return (len);
 }

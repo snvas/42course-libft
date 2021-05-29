@@ -6,34 +6,40 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 13:55:24 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/26 21:40:23 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 17:37:37 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	ft_isspace(int c)
+{
+	if (c == ' ' || c == '\n' || c == '\t' || c == '\r'
+		|| c == '\f' || c == '\v')
+		return (1);
+	return (0);
+}
+
 int	ft_atoi(const char *nptr)
 {
-	long int		neg;
-	unsigned int	i;
-	long int		num;
+	int	num;
+	int	sign;
 
-	i = 0;
-	neg = 1;
+	while ((ft_isspace(*nptr)))
+		nptr++;
+	sign = 1;
+	if (*nptr == '+' || *nptr == '-')
+	{
+		if (*nptr == '-')
+			sign = -1;
+		nptr++;
+	}
 	num = 0;
-	while (nptr[i] == ' ' || nptr[i] == '\n' || nptr[i] == '\t' || nptr[i] == '\v'
-		|| nptr[i] == '\f' || nptr[i] == '\r')
-		i++;
-	if (nptr[i] == '-' || nptr[i] == '+')
+	while ((ft_isdigit(*nptr)))
 	{
-		if (nptr[i] == '-')
-			neg *= -1;
-		i++;
+		num *= 10;
+		num += sign * (*nptr - '0');
+		nptr++;
 	}
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		num = num * 10 + (nptr[i] - '0');
-		i++;
-	}
-	return ((int)(num * neg));
+	return (num);
 }

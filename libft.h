@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 15:24:56 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/29 14:55:56 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 16:52:27 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
 typedef struct s_list
 {
 	void			*content;
-	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
 
