@@ -6,16 +6,16 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 23:30:33 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/29 14:44:33 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 14:54:59 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t ft_countword(char const *s, char c)
+static size_t	ft_countword(char const *s, char c)
 {
 	unsigned int	i;
-	int			count;
+	int				count;
 
 	i = 0;
 	count = 0;
@@ -66,7 +66,7 @@ char	**ft_split(char const *s, char c)
 	size_t		i;
 	size_t		j;
 	size_t		k;
-	char	**tab;
+	char		**tab;
 
 	i = 0;
 	k = 0;

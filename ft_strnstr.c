@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 16:27:23 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/29 14:49:58 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 14:56:56 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		if (!ft_strncmp(big, little, l_size))
 			return ((char *)big);
 		big++;
-		s_size++;
+		s_size--;
 	}
 	return (NULL);
 }
