@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 16:27:23 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/29 14:41:16 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 14:49:58 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		s_size = b_size;
 	while (l_size <= s_size)
 	{
-		if (!ft_strncpm(big, little, l_size))
+		if (!ft_strncmp(big, little, l_size))
 			return ((char *)big);
 		big++;
 		s_size++;
