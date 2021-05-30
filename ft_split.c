@@ -6,7 +6,7 @@
 /*   By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 23:30:33 by snovaes           #+#    #+#             */
-/*   Updated: 2021/05/29 17:37:23 by snovaes          ###   ########.fr       */
+/*   Updated: 2021/05/29 18:43:53 by snovaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static char	*worddup(const char *s, size_t len)
 	return (str);
 }
 
-static void	*kill(char **tab, size_t stop)
+static void	*freesplit(char **tab, size_t stop)
 {
 	size_t	counter;
 
@@ -93,7 +93,7 @@ char	**ft_split(const char *s, char c)
 		{
 			tab[counter] = worddup(s, len);
 			if (tab[counter++] == NULL)
-				return (kill(tab, counter - 1));
+				return (freesplit(tab, counter - 1));
 		}
 		s += len + 1;
 	}
