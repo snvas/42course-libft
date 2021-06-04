@@ -6,7 +6,7 @@
 #    By: snovaes <snovaes@student.42sp.org.br>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/26 23:38:05 by snovaes           #+#    #+#              #
-#    Updated: 2021/05/29 17:56:11 by snovaes          ###   ########.fr        #
+#    Updated: 2021/06/02 19:51:16 by snovaes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,10 @@ $(NAME): $(OBJECTS)
 
 bonus:	$(OBJECTS) $(BONUSOBJS)
 		ar rc $(NAME) $^
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SOURCES) $(BONUSSRCS)
+	gcc -nostartfiles -shared -o libft.so $(OBJECTS) $(BONUSOBJS)
 
 clean:
 	rm -rf $(OBJECTS) $(BONUSOBJS)
