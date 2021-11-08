@@ -18,6 +18,7 @@ The aim of this project is to code a C library regrouping usual functions.
 #### ctype.h
 
 | Function | Description |
+| --- | --- |
 | ft_isalpha	| checks for an alphabetic character. |
 | ft_isdigit	| checks for a digit (0 through 9). |
 | ft_isalnum	| checks for an alphanumeric character; it is equivalent to (isalpha(c) |
@@ -29,6 +30,7 @@ The aim of this project is to code a C library regrouping usual functions.
 #### string.h
 
 | Function | Description | 
+| --- | --- |
 | ft_memset	| fills the first n bytes of the memory area pointed to by s with the constant byte c |
 | ft_bzero	| erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area. |
 | ft_memcpy	| copies n bytes from memory area src to memory area dest. The memory areas must not overlap. Use memmove(3) if the memory areas do overlap. |
@@ -48,6 +50,7 @@ The aim of this project is to code a C library regrouping usual functions.
 #### stdlib.h
 
 | Function	| Description |
+| --- | --- |
 | ft_atoi	| converts the initial portion of the string pointed to by str to int representation and returns the int. |
 | ft_calloc	| allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory. The memory is set to zero. |
 
@@ -57,6 +60,7 @@ The aim of this project is to code a C library regrouping usual functions.
 #### string's functions
 
 | Function | Description |
+| --- | --- |
 | ft_substr	| Allocates and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’. |
 | ft_strjoin	| Allocates and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’. |
 | ft_strtrim	| Allocates and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string. |
@@ -66,12 +70,14 @@ The aim of this project is to code a C library regrouping usual functions.
 #### string to int
 
 | Function |	Description |
+| --- | --- |
 |  ft_itoa	| Allocates and returns a string representing the integer received as an argument. Negative numbers must be handled. |
 
 
 #### file-descriptor's functions
 
 | Function	| Description  |
+| --- | --- |
 | ft_putchar_fd	| Outputs the character ’c’ to the given file descriptor. |
 | ft_putstr_fd	| Outputs the string ’s’ to the given file descriptor. |
 | ft_putendl_fd	| Outputs the string ’s’ to the given file descriptor, followed by a newline. |
@@ -83,6 +89,7 @@ The aim of this project is to code a C library regrouping usual functions.
 #### Linked Lists
 
 | Function	| Description |
+| --- | --- |
 | ft_lstnew	| Allocates and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL. |
 | ft_lstadd_front	| Adds the element ’new’ at the beginning of the list. |
 | ft_lstsize	| Counts the number of elements in a list. |
@@ -96,6 +103,7 @@ The aim of this project is to code a C library regrouping usual functions.
 #### Double Linked Lists
 
 | Function	| Description |
+| --- | --- |
 | ft_dlstnew  | Allocates and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL. |
 | ft_dlstadd_front  | Adds the element ’new’ at the beginning of the double linked list. |
 | ft_dlstsize | Counts the number of elements in a double linked list. |
@@ -109,6 +117,7 @@ The aim of this project is to code a C library regrouping usual functions.
 ### Extras
 
 | Function |	Description |
+| --- | --- |
 | ft_putchar	| outputs the character c to the standard output. |
 | ft_putstr	| outputs a string to the standard output. |
 | ft_putendl	| outputs a string to the standard output, followed by a newline. |
