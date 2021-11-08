@@ -1,9 +1,8 @@
-# 42course-libft
+# Libft - 42 Course
 
-## Desenvolvimento do projeto Libft da 42 São Paulo
 ![Libft](https://game.42sp.org.br/static/assets/achievements/libfte.png)
 
-### Introduction
+## Introduction
 The aim of this project is to code a C library regrouping usual functions.
 
 - First part: re-code a set of the libc functions, as defined in their man, with the same prototype and behaviors as the originals.
